@@ -21,10 +21,10 @@ def clean_tweet(tweet):
     return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t])|(\w+:\/\/\S+)", " ", tweet).split())
 
 def auth():
-    consumer_key = 'YA7o8rljz2lr2lT6x0Pqm9GFJ'
-    consumer_secret = 'Jju95zsOX05QPTQTFQi07sdF8zft4zgULYaZMe5rhrAAM3b3bo'
-    access_token = '582758531-1kJSp9krnQ9UYNHRuwLkxdoF4JzzbR51Z0j8z4EV'
-    access_secret = 'ihKcWlNAGXHEaSwEAL70OUdH1uleI7BDsNMf6PDRLT2td'
+    consumer_key = ''
+    consumer_secret = ''
+    access_token = ''
+    access_secret = ''
     auth = OAuthHandler(consumer_key,consumer_secret)
     auth.set_access_token(key=access_token,secret=access_secret)
     return auth
